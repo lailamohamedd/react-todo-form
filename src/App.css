@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container form {
+    display: flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container button {
+    cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container form input,
+.container button {
+    margin: 5px;
+    outline: none;
+    color: #eee;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    padding: 12px;
 }
-
-.App-link {
-  color: #61dafb;
+.container form input {
+    background-color: #404040;
+    border: none;
+    width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container form button {
+    background: #0078d4;
+    border: 1px solid #0078d4;
+    width: 200px;
+}
+.container .active-btn {
+    background-color: #39da8a;
+    border: 1px solid #39da8a;
+}
+.container .btn-all {
+    background-color: #fdac41;
+    border: 1px solid #fdac41;
+}
+.container .all-btn {
+    background-color: #00cfdd;
+    border: 1px solid #00cfdd;
+}
+.container .d-f {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #ff00f552;
+}
+.container .d-f .todo-text {
+    color: #eee;
+    font-weight: 700;
+    line-height: 29px;
+}
+.container .d-f .delete-btn {
+    background: transparent;
+    border: none;
+    color: #ff5b5c;
+    padding: 0;
+    font-size: 18px;
+}
+.container .btn-comp {
+    background-color: #8295ba;
+    border: 1px solid #8295ba;
+}
+.container .btn-remove {
+    background-color: #ff5b5c;
+    border: 1px solid #ff5b5c;
 }
